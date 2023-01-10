@@ -66,13 +66,13 @@ app.use("/vegetables", vegetableController);
 
 /**
  * Routes
- 
+ */
 // Redirect
 // This will redirect the user to the fruits page!
 app.get("/", (req, res) => {
   res.redirect("/fruits/");
 });
-*/
+
 
 // Listen on the port
 app.listen(PORT, () => {
