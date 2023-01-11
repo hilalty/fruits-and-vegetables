@@ -20,6 +20,15 @@ class Index extends React.Component {
                 {fruit.readyToEat
                   ? `It is ready to eat`
                   : `It is not ready to eat`}
+                    <form
+                  action={`/fruits/${fruit._id}?_method=DELETE`}
+                  method="POST"
+                  >
+                    <input type="submit" value="DELETE" />
+                  </form>
+                  <form action={`/fruits/${fruit._id}/edit`} method="GET">
+                    <input type="submit" value="UPDATE" />
+                  </form>
               </li>
             );
           })}

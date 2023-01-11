@@ -51,6 +51,7 @@ app.use(logger);
 // Allow express to use urlencoded
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static('public')); //tells express to try to match requests with files in the directory called 'public'
 /**
  * View engine
  */
