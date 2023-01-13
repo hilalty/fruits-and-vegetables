@@ -1,5 +1,5 @@
 const React = require('react');
-const DefaultLayout = require('../layout/Default.jsx')
+
 
 
 class DefaultLayout extends React.Component {
@@ -7,8 +7,8 @@ class DefaultLayout extends React.Component {
         return(
             <html>
                 <head>
-                    <title> {this.props.title}</title>
-                    <link rel="stylesheet" href={this.props.cssPath ?? "/css/app.css"} />
+                    <title>{this.props.title}</title>
+                    <link rel="stylesheet" href={"/css/app.css"} />
                 </head>
                 <body>
                     <h1>{this.props.title}</h1>
